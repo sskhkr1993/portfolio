@@ -1,0 +1,32 @@
+@use "../../Foundation/mixin" as m;
+
+.list-skills {
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  font-size: 1.5rem;
+
+  @include m.breakpoint(tab) {
+    &__item {
+      display: flex;
+      column-gap: 5px;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @include m.breakpoint(pc) {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    text-align: left;
+
+    &--first {
+      margin-bottom: 0.5rem;
+      border-bottom: solid 1px #7DCE94;
+    }
+  }
+}

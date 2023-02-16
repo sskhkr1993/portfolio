@@ -1,0 +1,22 @@
+@use "../../Foundation/mixin" as m;
+
+.card-container {
+  display: grid;
+  grid-template-columns: 250px;
+  gap: 2rem;
+  justify-content: center;
+
+  @include m.breakpoint(tab) {
+    grid-template-columns: 250px 250px;
+    gap: 3%;
+  }
+
+  @include m.breakpoint(pc) {
+    grid-template-columns: 300px 300px 300px;
+    gap: 2%;
+  }
+
+  &--archive {
+    margin-bottom: 5rem;
+  }
+}

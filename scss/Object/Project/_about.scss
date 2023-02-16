@@ -1,0 +1,37 @@
+@use "../../Foundation/mixin" as m;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include m.breakpoint(pc) {
+    flex-direction: row;
+  }
+
+  &__avater {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-image: url(../../../image/about-avatar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include m.breakpoint(pc) {
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+    text-align: left;
+
+    @include m.breakpoint(pc) {
+      width: 50%;
+    }
+  }
+}

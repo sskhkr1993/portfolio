@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名前が入ります</title>
+  <meta name="discription" content="くらきのポートフォリオサイト。Webサイトの制作やご相談などお気軽にお問い合わせください">
+
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+<!--favicon-->
+  <link rel="icon" href="">
+<!--fontawesome-->
+  <script src="https://kit.fontawesome.com/30bd9b4b55.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="l-wrapper">
+<!--header-->
+  <header class="l-header header">
+    <div class="header-logo">
+      <div class="header-logo__item">
+        <h1 class="header-logo__heading">
+          <a href="#" class="header-logo__link">タイトルが入ります</a>
+        </h1>
+      </div>
+    </div>
+<!--menuボタン-->
+      <button class="header__button">
+        <p class="header__button__text">MENU</p>
+        <span class="button--nav"></span>
+      </button>
+<!--navi-->
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">HOME</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">WORKS</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">ABOUT</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="l-main l-main--contact">
+<!--contact-->
+    <div class="block block--contact">
+      <h2 class="block__heading block__heading--contact">CONTACT</h2>
+      <div class="block__text">お仕事のご依頼やご相談など、お気軽にお問い合わせください。
+      </div>
+      <form class="contact__form" action="" method="post" name="contact">
+        <div class="form__name">
+          <label class="form__label" for="name">お名前</label>
+          <input class="form__input" id="name" type="text" placeholder="山田太郎">
+        </div>
+        <div class="form__mail">
+          <label class="form__label" for="mail">メールアドレス</label>
+          <input class="form__input" id="mail" type="email" placeholder="×××××＠○○○○○"></input>
+        </div>
+        <div class="form__content">
+          <label class="form__label" for="content">お問い合わせ内容</label>
+          <textarea class="form__textarea" name="" id="content" cols="30" rows="5"></textarea>
+        </div>
+        <div class="button form__submit">
+          <input class="submit__body" type="submit" value="送信">
+        </div>
+      </form>
+    </div>
+
+  </main>
+<!--footer-->
+  <footer class="l-footer footer">
+    <div class="footer__outer">
+      <p class="footer__copyright">© 2023 kuraki</p>
+    </div>
+  </footer>
+
+  <!--jQ読み込み-->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!--JSfile-->
+  <script src="js/menu.js"></script>
+  <script src="js/button--nav.js"></script>
+</body>
+
+</html>

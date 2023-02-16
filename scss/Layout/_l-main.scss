@@ -1,0 +1,39 @@
+@use "../Foundation/mixin" as m;
+
+.l-main {
+  margin-top: 7rem;
+  text-align: center;
+
+  @include m.breakpoint(tab) {
+    margin-top: 10rem;
+  }
+
+  @include m.breakpoint(pc) {
+    margin-top: 13rem;
+  }
+
+  &--archive,
+  &--contact {
+    margin-top: 10rem;
+
+    @include m.breakpoint(tab) {
+      margin-top: 13rem;
+    }
+
+    @include m.breakpoint(pc) {
+      margin-top: 15rem;
+    }
+  }
+
+  &--page {
+    margin-top: 8rem;
+
+    @include m.breakpoint(tab) {
+      margin-top: 10rem;
+    }
+
+    @include m.breakpoint(pc) {
+      margin-top: 15rem;
+    }
+  }
+}

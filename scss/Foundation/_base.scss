@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*ベース： #F6F5F3
+  緑：#7DCE94
+  黒：#3D3D3F
+  白： #F9F8FD*/
+
+html {
+  font-size: 100%;
+  color: #3D3D3F;
+}
+
+body {
+  font-family: 'Montserrat', 'M PLUS 1', sans-serif;
+  line-height: 1.5;
+  background-color: #F6F5F3;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  /*48px*/
+  font-size: clamp(2.188rem, 2.074rem + 0.57vw, 2.5rem);
+}
+
+h2 {
+  /*35px*/
+  font-size: clamp(1.875rem, 1.761rem + 0.57vw, 2.188rem);
+}
+
+h3 {
+  /*30px*/
+  font-size: clamp(1.563rem, 1.449rem + 0.57vw, 1.875rem);
+}
+
+h4 {
+  /*25px*/
+  font-size: clamp(1.25rem, 1.188rem + 0.31vw, 1.563rem);
+}
+
+h5 {
+  /*20px*/
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+h6,
+p {
+  /*16px*/
+  font-size: 1rem;
+}
