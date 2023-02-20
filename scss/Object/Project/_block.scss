@@ -16,16 +16,28 @@
     border-bottom: solid 1px #7DCE94;
 
     &--page {
-      margin-bottom: 0;
+      margin-bottom: 1rem;
     }
   }
 
   &__content {
     margin-bottom: 2rem;
+
+    &--page {
+      margin-bottom: 4rem;
+
+      @include m.breakpoint(pc) {
+        margin-bottom: 6rem;
+      }
+
+    }
   }
 
   &__link {
     border-bottom: 1px solid #3D3D3F;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.75rem;
   }
 
   &__text {

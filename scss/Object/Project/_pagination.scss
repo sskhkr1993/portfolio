@@ -5,14 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
 
-  &-container {
-    margin-bottom: 1rem;
 
-    @include m.breakpoint(tab) {
-      margin-bottom: 3rem;
-    }
-  }
 
   &-list__text {
     padding: 0 0.3rem;

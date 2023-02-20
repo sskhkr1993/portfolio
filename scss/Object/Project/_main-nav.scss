@@ -48,10 +48,14 @@
   }
 
   &__link {
+    letter-spacing: 0.1rem;
+    line-height: 1.75rem;
+
     @include m.breakpoint(tab) {
       position: relative;
       margin-left: 2rem;
     }
+
     @include m.breakpoint(pc) {
       margin-left: 3rem;
     }

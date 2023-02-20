@@ -17,10 +17,6 @@
     &--archive {
       margin-bottom: 1rem;
     }
-
-    &--page {
-      margin-bottom: 1rem;
-    }
   }
 
   &__figure {
@@ -51,6 +47,10 @@
 
   &--page {
     margin-bottom: 3rem;
+
+    @include m.breakpoint(pc) {
+      margin-bottom: 10rem;
+    }
   }
 
   &__image {
@@ -58,10 +58,23 @@
     height: 300px;
     margin-bottom: 1rem;
     background-color: grey;
+
+    &--page {
+      margin-bottom: 4rem;
+    }
   }
 
   &__caption {
+    padding-top: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    border-top: solid 1px #2f4e38;
     text-align: left;
+
+    @include m.breakpoint(pc) {
+      margin-top: 7rem;
+      margin-bottom: 4.5rem;
+    }
   }
 
   &__body--page {
@@ -69,6 +82,11 @@
   }
 
   &-list__item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+    @include m.breakpoint(pc) {
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+    }
   }
 }

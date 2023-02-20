@@ -8,7 +8,6 @@
   background-color: rgba(246, 245, 243, 0.6);
 
   @include m.breakpoint(tab) {
-    padding-top: 1.5rem;
     padding-right: 10%;
     padding-left: 10%;
   }
