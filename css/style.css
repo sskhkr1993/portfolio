@@ -451,12 +451,13 @@ figcaption {
   }
 }
 .l-main {
-  margin-top: 7rem;
+  margin-top: 13rem;
+  margin-bottom: 10rem;
   text-align: center;
 }
 @media screen and (min-width: 520px) {
   .l-main {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 }
 @media screen and (min-width: 960px) {
@@ -670,9 +671,13 @@ figcaption {
 .block--works--archive, .block--page {
   margin-bottom: 0;
 }
+.block--contact,
+.block .block {
+  margin-bottom: 0;
+}
 .block__heading {
   display: inline-block;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   border-bottom: solid 1px #7DCE94;
 }
 .block__heading--page {
@@ -711,29 +716,36 @@ figcaption {
 .card-container {
   display: grid;
   grid-template-columns: 250px;
-  gap: 2rem;
+  gap: 4rem;
   justify-content: center;
 }
 @media screen and (min-width: 520px) {
   .card-container {
-    grid-template-columns: 250px 250px;
-    gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 250px));
   }
 }
 @media screen and (min-width: 960px) {
   .card-container {
-    grid-template-columns: 300px 300px 300px;
-    gap: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
+    gap: 40px;
   }
 }
 .card-container--archive {
   margin-bottom: 5rem;
 }
 
+.card--page {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 960px) {
+  .card--page {
+    margin-bottom: 10rem;
+  }
+}
 .card__header {
   position: relative;
   top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
 }
@@ -762,19 +774,23 @@ figcaption {
 .card__figure--archive {
   height: 300px;
 }
+.card__body {
+  padding-top: 1rem;
+  border-top: solid 1px #2f4e38;
+}
 .card__title {
-  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .card__subtitle {
-  font-size: 1.2rem;
-}
-.card--page {
-  margin-bottom: 3rem;
+  letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 960px) {
-  .card--page {
-    margin-bottom: 10rem;
+  .card__subtitle {
+    margin-top: 0.5rem;
   }
+}
+.card__content {
+  font-size: 0.8rem;
 }
 .card__image {
   width: 100%;
@@ -787,7 +803,6 @@ figcaption {
 }
 .card__caption {
   padding-top: 1rem;
-  margin-top: 4rem;
   margin-bottom: 2.5rem;
   border-top: solid 1px #2f4e38;
   text-align: left;
@@ -858,34 +873,83 @@ figcaption {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 520px) {
+  .about {
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (min-width: 960px) {
   .about {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.about__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 520px) {
+  .about__header {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .about__header {
+    width: 100%;
+    justify-content: space-around;
   }
 }
 .about__avater {
   width: 6rem;
   height: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 50%;
   background-image: url(../../../image/about-avatar.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 520px) {
+  .about__avater {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 960px) {
   .about__avater {
-    margin-right: 2rem;
     margin-bottom: 0;
   }
 }
 .about__content {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   text-align: left;
+}
+@media screen and (min-width: 520px) {
+  .about__content {
+    width: 70%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .about__content--second {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 960px) {
   .about__content {
-    width: 50%;
+    width: initial;
+    text-align: initial;
+  }
+}
+.about__content--second {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 520px) {
+  .about__content--second {
+    margin-bottom: 0;
   }
 }
 
@@ -896,6 +960,15 @@ figcaption {
   grid-template-columns: repeat(1, 1fr);
   font-size: 1.5rem;
 }
+@media screen and (min-width: 960px) {
+  .list-skills {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.list-skills__item {
+  margin-bottom: 0.5rem;
+}
 @media screen and (min-width: 520px) {
   .list-skills__item {
     display: flex;
@@ -905,11 +978,12 @@ figcaption {
   }
 }
 @media screen and (min-width: 960px) {
-  .list-skills {
-    width: 60%;
-    margin: 0 auto;
-    font-size: 1.5rem;
+  .list-skills__item {
+    margin-bottom: 1rem;
   }
+}
+.list-skills__item > i {
+  letter-spacing: 0.2rem;
 }
 .list-skills__text {
   text-align: left;

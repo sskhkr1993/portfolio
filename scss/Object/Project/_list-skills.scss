@@ -7,18 +7,27 @@
   grid-template-columns: repeat(1, 1fr);
   font-size: 1.5rem;
 
-  @include m.breakpoint(tab) {
-    &__item {
+  @include m.breakpoint(pc) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin-bottom: 0.5rem;
+
+    @include m.breakpoint(tab) {
       display: flex;
       column-gap: 5px;
       margin-bottom: 0.5rem;
     }
-  }
 
-  @include m.breakpoint(pc) {
-    width: 60%;
-    margin: 0 auto;
-    font-size: 1.5rem;
+    @include m.breakpoint(pc) {
+      margin-bottom: 1rem;
+    }
+
+    &>i {
+      letter-spacing: 0.2rem;
+    }
   }
 
   &__text {

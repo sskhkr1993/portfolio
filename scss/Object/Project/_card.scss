@@ -1,10 +1,18 @@
 @use "../../Foundation/mixin" as m;
 
 .card {
+  &--page {
+    margin-bottom: 3rem;
+
+    @include m.breakpoint(pc) {
+      margin-bottom: 10rem;
+    }
+  }
+
   &__header {
     position: relative;
     top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     box-shadow: 0 7px 10px rgb(0 0 0 / 30%);
     transition: all 0.3s;
 
@@ -37,20 +45,25 @@
     }
   }
 
+  &__body {
+    padding-top: 1rem;
+    border-top: solid 1px #2f4e38;
+  }
+
   &__title {
-    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   &__subtitle {
-    font-size: 1.2rem;
-  }
-
-  &--page {
-    margin-bottom: 3rem;
+    letter-spacing: 0.1rem;
 
     @include m.breakpoint(pc) {
-      margin-bottom: 10rem;
+      margin-top: 0.5rem;
     }
+  }
+
+  &__content {
+    font-size: 0.8rem;
   }
 
   &__image {
@@ -66,7 +79,6 @@
 
   &__caption {
     padding-top: 1rem;
-    margin-top: 4rem;
     margin-bottom: 2.5rem;
     border-top: solid 1px #2f4e38;
     text-align: left;

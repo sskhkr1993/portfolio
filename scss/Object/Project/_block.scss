@@ -10,9 +10,14 @@
     margin-bottom: 0;
   }
 
+  &--contact,
+  .block {
+    margin-bottom: 0;
+  }
+
   &__heading {
     display: inline-block;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     border-bottom: solid 1px #7DCE94;
 
     &--page {

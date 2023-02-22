@@ -1,11 +1,12 @@
 @use "../Foundation/mixin" as m;
 
 .l-main {
-  margin-top: 7rem;
+  margin-top: 13rem;
+  margin-bottom: 10rem;
   text-align: center;
 
   @include m.breakpoint(tab) {
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
 
   @include m.breakpoint(pc) {
