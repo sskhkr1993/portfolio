@@ -3,7 +3,7 @@
 $(function () {
   $('.card-container--archive,.card--page').paginathing({//親要素のclassを記述
     pageNumbers: true,
-    perPage: 2,//1ページあたりの表示件数
+    perPage: 3,//1ページあたりの表示件数
     firstText: '<i class="fas fa-angle-left"></i>',
     lastText: '<i class="fas fa-angle-right"></i>',
     prevText: '<i class="fas fa-angle-left"></i><span class=pagination-list__text>前へ</span>',

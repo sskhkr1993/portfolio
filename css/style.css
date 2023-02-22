@@ -465,30 +465,30 @@ figcaption {
     margin-top: 13rem;
   }
 }
-.l-main--archive, .l-main--contact {
+.l-main--contact {
   margin-top: 10rem;
 }
 @media screen and (min-width: 520px) {
-  .l-main--archive, .l-main--contact {
+  .l-main--contact {
     margin-top: 13rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .l-main--archive, .l-main--contact {
+  .l-main--contact {
     margin-top: 15rem;
   }
 }
-.l-main--page {
+.l-main--archive, .l-main--page {
   margin-top: 13rem;
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 520px) {
-  .l-main--page {
+  .l-main--archive, .l-main--page {
     margin-top: 15rem;
   }
 }
 @media screen and (min-width: 960px) {
-  .l-main--page {
+  .l-main--archive, .l-main--page {
     margin-top: 16rem;
     margin-bottom: 4rem;
   }
