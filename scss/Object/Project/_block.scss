@@ -5,6 +5,11 @@
   padding-left: 10%;
   margin-bottom: 10rem;
 
+  @include m.breakpoint(pc) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   &--works--archive,
   &--page {
     margin-bottom: 0;

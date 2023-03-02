@@ -6,6 +6,7 @@
   background-color: #F9F8FD;
 
   &--nav {
+
     &::after,
     &::before {
       content: "";
@@ -26,7 +27,7 @@
 
     &::after {
       content: "";
-      top: 27px;
+      top: 38px;
     }
 
     &.active::before {

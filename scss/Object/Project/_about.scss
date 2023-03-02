@@ -11,7 +11,9 @@
   }
 
   @include m.breakpoint(pc) {
-    width: 80%;
+    width: 60rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
     margin-right: auto;
     margin-left: auto;
   }

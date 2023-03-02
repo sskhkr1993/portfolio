@@ -11,8 +11,8 @@
   }
 
   @include m.breakpoint(pc) {
-    grid-template-columns: repeat(auto-fit, minmax(auto, 300px));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 350px));
+    gap: 50px;
   }
 
   &--archive {
